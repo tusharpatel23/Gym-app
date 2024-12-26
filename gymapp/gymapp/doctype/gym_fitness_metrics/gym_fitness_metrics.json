@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member}-{date}",
+ "creation": "2024-12-25 15:16:38.072002",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "date",
+  "weight_kg",
+  "calories_intake_kcal",
+  "workout_duration_mins",
+  "custom_notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "weight_kg",
+   "fieldtype": "Float",
+   "label": "Weight (kg)"
+  },
+  {
+   "fieldname": "calories_intake_kcal",
+   "fieldtype": "Int",
+   "label": "Calories Intake (kcal)"
+  },
+  {
+   "fieldname": "workout_duration_mins",
+   "fieldtype": "Int",
+   "label": "Workout Duration (mins)"
+  },
+  {
+   "fieldname": "custom_notes",
+   "fieldtype": "Small Text",
+   "label": "Custom Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-26 09:43:06.131699",
+ "modified_by": "Administrator",
+ "module": "gymapp",
+ "name": "Gym Fitness Metrics",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

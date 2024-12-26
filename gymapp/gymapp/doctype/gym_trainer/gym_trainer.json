@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "format:{trainer_name}-{specialization}",
+ "creation": "2024-12-25 16:28:19.728689",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trainer_name",
+  "email",
+  "specialization",
+  "hourly_rate",
+  "ratings",
+  "profile_image",
+  "route",
+  "published",
+  "contact_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "label": "Trainer Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Select",
+   "label": "Specialization",
+   "options": "Weight Training\nCardio\nYoga\nCrossFit\nOther"
+  },
+  {
+   "fieldname": "hourly_rate",
+   "fieldtype": "Currency",
+   "label": "Hourly Rate"
+  },
+  {
+   "fieldname": "ratings",
+   "fieldtype": "Float",
+   "label": "Ratings"
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "label": "Profile Image"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-12-26 12:22:43.115470",
+ "modified_by": "Administrator",
+ "module": "gymapp",
+ "name": "Gym Trainer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

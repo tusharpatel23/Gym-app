@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member}",
+ "creation": "2024-12-25 19:35:54.541736",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "trainer",
+  "start_date",
+  "end_date",
+  "total_days",
+  "column_break_ajsb",
+  "hourly_rate",
+  "total_hours",
+  "total_rate",
+  "amount_paid",
+  "subscription_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "description": "Default membership end date can be change",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Int",
+   "label": "Total days"
+  },
+  {
+   "fieldname": "column_break_ajsb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "trainer.hourly_rate",
+   "fieldname": "hourly_rate",
+   "fieldtype": "Data",
+   "label": "Hourly Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Int",
+   "label": "Total Hours"
+  },
+  {
+   "fieldname": "total_rate",
+   "fieldtype": "Currency",
+   "label": "Total Rate"
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "label": "Amount Paid"
+  },
+  {
+   "fieldname": "subscription_date",
+   "fieldtype": "Date",
+   "label": "Subscription Date"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Gym Member"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-26 12:23:35.755646",
+ "modified_by": "Administrator",
+ "module": "gymapp",
+ "name": "Gym Trainer Subscription",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Trainer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

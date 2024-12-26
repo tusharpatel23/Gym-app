@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member}-{class_name}-{booking_date}",
+ "creation": "2024-12-20 17:10:18.503216",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "class_name",
+  "member",
+  "class_date",
+  "class_time",
+  "trainer",
+  "booking_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Select",
+   "label": "Class Name",
+   "options": "Dance Fitness\nBoxing\nYoga\nCrossFit\nOther"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "class_time",
+   "fieldtype": "Time",
+   "label": "Class Time"
+  },
+  {
+   "fieldname": "class_date",
+   "fieldtype": "Date",
+   "label": "Class Date"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Gym Trainer"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-26 12:48:59.377450",
+ "modified_by": "Administrator",
+ "module": "gymapp",
+ "name": "Class Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Member",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gym Admin",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

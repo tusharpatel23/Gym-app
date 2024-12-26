@@ -245,3 +245,12 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doc_events = {
+    "*":{
+        "after_save":"gymapp.api.after_save_hook"
+    }
+}
+
+error_page = {
+    "404": "/assets/gymapp/404.html"
+}

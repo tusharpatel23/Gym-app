@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-20 17:12:06.299255",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "trainer_limit",
+  "locker_count",
+  "monthly_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "locker_count",
+   "fieldtype": "Int",
+   "label": "Locker Count"
+  },
+  {
+   "fieldname": "trainer_limit",
+   "fieldtype": "Int",
+   "label": "Trainer Limit"
+  },
+  {
+   "fieldname": "monthly_amount",
+   "fieldtype": "Currency",
+   "label": "Monthly Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-12-26 12:25:58.183778",
+ "modified_by": "Administrator",
+ "module": "gymapp",
+ "name": "Gym Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Gym Admin",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

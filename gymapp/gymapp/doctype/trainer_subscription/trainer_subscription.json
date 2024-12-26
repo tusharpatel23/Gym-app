@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{trainer}",
+ "creation": "2024-12-19 23:40:53.794655",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member",
+  "trainer",
+  "start_date",
+  "end_date",
+  "total_days",
+  "column_break_good",
+  "hourly_rate",
+  "total_hours",
+  "total_rate",
+  "amount_paid",
+  "subscription_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "label": "Member",
+   "options": "Gym Member"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Traner"
+  },
+  {
+   "fieldname": "subscription_date",
+   "fieldtype": "Date",
+   "label": "Subscription Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Int",
+   "label": "Total Hours",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "description": "Default membership end date can be change",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "amount_paid",
+   "fieldtype": "Currency",
+   "label": "Amount Paid"
+  },
+  {
+   "fieldname": "column_break_good",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "trainer.hourly_rate",
+   "fieldname": "hourly_rate",
+   "fieldtype": "Data",
+   "label": "Hourly Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_rate",
+   "fieldtype": "Currency",
+   "label": "Total Rate",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Int",
+   "label": "Total days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-25 12:34:07.789339",
+ "modified_by": "Administrator",
+ "module": "gymapp",
+ "name": "Trainer Subscription",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "member"
+}

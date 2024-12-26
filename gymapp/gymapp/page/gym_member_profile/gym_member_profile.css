@@ -1,0 +1,89 @@
+/* Main container styling */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px;
+    padding: 90px;
+    background-color: #dde3e4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(201, 199, 199), 5px 5px 20px rgb(22, 22, 22);
+}
+
+/* Profile image styling */
+.profile-image {
+    max-width: 150px;
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+    margin-bottom: 20px;
+}
+
+/* Plan section styling */
+.plan {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subscription heading */
+.heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button container for proper alignment */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Buttons styling */
+.btn-bookLocker, .btn-trainerSubscription, .btn-bookClass {
+    background-color: #1fc286;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-bookLocker:hover,
+.btn-trainerSubscription:hover,
+.btn-bookClass:hover {
+    background-color: #17a978;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .btn-bookLocker, .btn-trainerSubscription, .btn-bookClass {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 10px;
+        margin: 10px 15px 10px 15px;
+    }
+
+    .btn-bookLocker, .btn-trainerSubscription, .btn-bookClass {
+        font-size: 12px;
+        padding: 8px 16px;
+        
+    }
+}
